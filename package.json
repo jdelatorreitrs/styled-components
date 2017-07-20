@@ -2,7 +2,7 @@
   "name": "ikabo-mui",
   "version": "0.0.1",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
-  "main": "lib/index.js",
+  "main": "app/components",
   "repository": {
     "type": "git",
     "url": "git://github.com/react-boilerplate/react-boilerplate.git"

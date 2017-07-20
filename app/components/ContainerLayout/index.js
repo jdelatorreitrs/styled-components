@@ -33,3 +33,5 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   background-color: ${props => props.theme.footerBgColor ? props.theme.footerBgColor : 'rgba(0,0,0, 0.2)' };
 `;
+
+export default {AppContainer, PageContainer, FooterContainer}

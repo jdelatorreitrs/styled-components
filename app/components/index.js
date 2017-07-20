@@ -1,43 +1,44 @@
-import A from "./A";
-import Button from "./Button";
-import CenteredSection from "./CenteredSection";
-import ContainerLayout from "./ContainerLayout";
-import Footer from "./Footer";
-import H1 from "./H1";
-import H2 from "./H2";
-import H3 from "./H3";
-import Header from "./Header";
-import Icon from './Icon';
-import Img from './Img';
-import List from './List';
-import ListItem from './ListItem';
-import LoadingIndicator from './LoadingIndicator';
-import Menu from './Menu';
-import ProgressBar from './ProgressBar';
-import RepoList from './RepoList';
-import Section from './Section';
-import Toggle from './Toggle';
-import ToggleOption from './ToggleOption';
+/*******************************************************************************
+_____ _   __  ___  ______  _____           ___  ____   _ _____
+|_   _| | / / / _ \ | ___ \|  _  |          |  \/  | | | |_   _|
+  | | | |/ / / /_\ \| |_/ /| | | |  ______  | .  . | | | | | |
+  | | |    \ |  _  || ___ \| | | | |______| | |\/| | | | | | |
+ _| |_| |\  \| | | || |_/ /\ \_/ /          | |  | | |_| |_| |_
+ \___/\_| \_/\_| |_/\____/  \___/           \_|  |_/\___/ \___/
 
-module.exports = exports = {
-  A,
-  Button,
-  CenteredSection,
-  ContainerLayout,
-  Footer,
-  H1,
-  H2,
-  H3,
-  Header,
-  Icon,
-  Img,
-  List,
-  ListItem,
-  LoadingIndicator,
-  Menu,
-  ProgressBar,
-  RepoList,
-  Section,
-  Toggle,
-  ToggleOption,
-};
+*******************************************************************************/
+
+/*******************************************************************************
+* Custom HTML Tags Components
+*******************************************************************************/
+export A from "./A";
+export Button from "./Button";
+export H1 from "./H1";
+export H2 from "./H2";
+export H3 from "./H3";
+export Img from './Img';
+
+/*******************************************************************************
+* Custom High Level Components
+*******************************************************************************/
+export CenteredSection from "./CenteredSection";
+export ContainerLayout from "./ContainerLayout";
+export Footer from "./Footer";
+export Header from "./Header";
+export Icon from './Icon';
+export List from './List';
+export ListItem from './ListItem';
+export LoadingIndicator from './LoadingIndicator';
+export Menu from './Menu';
+export ProgressBar from './ProgressBar';
+export Section from './Section';
+export Toggle from './Toggle';
+export ToggleOption from './ToggleOption';
+
+/*******************************************************************************
+* Styled Components API
+*******************************************************************************/
+// @todo we must decide whether users will be able to extends the components we provide with its own ones or to force users to just use the components we expose
+// A ) Rigid + higher control ? -> do not export keyframes and styles
+// B ) Flexible + lower control ? -> export keyframes and styled
+export { injectGlobal, keyframes, styled, ThemeProvider} from 'styled-components';
